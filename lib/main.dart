@@ -28,6 +28,7 @@ class NfcApp extends StatelessWidget {
     final baseScheme = ColorScheme.fromSeed(seedColor: AppPalette.lavender, brightness: Brightness.light);
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'NFC Reader',
       theme: ThemeData(
         colorScheme: baseScheme.copyWith(
@@ -35,6 +36,7 @@ class NfcApp extends StatelessWidget {
           secondary: AppPalette.blue,
           surface: Colors.white,
         ),
+
         scaffoldBackgroundColor: const Color(0xFFF7F8FF),
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.white,
